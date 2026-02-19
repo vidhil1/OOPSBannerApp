@@ -1,5 +1,12 @@
 public class OOPSBannerApp {
     public static void main(String[] args) {
-        System.out.println("OOPS");
+        // Each line builds the row for O + O + P + S
+        System.out.println("  *** " + "  *** " + " ***** " + "  **** ");
+        System.out.println(" ** ** " + " ** ** " + " ** ** " + " ** ");
+        System.out.println(" ** ** " + " ** ** " + " ** ** " + " ** ");
+        System.out.println(" ** ** " + " ** ** " + " ***** " + "  **** ");
+        System.out.println(" ** ** " + " ** ** " + " ** " + "     ** ");
+        System.out.println(" ** ** " + " ** ** " + " ** " + "     ** ");
+        System.out.println("  *** " + "  *** " + " ** " + "  **** ");
     }
 }
