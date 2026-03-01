@@ -1,12 +1,12 @@
 public class OOPSBannerApp {
     public static void main(String[] args) {
-        // Each line builds the row for O + O + P + S
-        System.out.println("  *** " + "  *** " + " ***** " + "  **** ");
-        System.out.println(" ** ** " + " ** ** " + " ** ** " + " ** ");
-        System.out.println(" ** ** " + " ** ** " + " ** ** " + " ** ");
-        System.out.println(" ** ** " + " ** ** " + " ***** " + "  **** ");
-        System.out.println(" ** ** " + " ** ** " + " ** " + "     ** ");
-        System.out.println(" ** ** " + " ** ** " + " ** " + "     ** ");
-        System.out.println("  *** " + "  *** " + " ** " + "  **** ");
+        // UC3: Using String.join("", ...) instead of + for better memory efficiency
+        System.out.println(String.join("", "  *** ", "  *** ", " ***** ", "  **** "));
+        System.out.println(String.join("", " ** ** ", " ** ** ", " ** ** ", " ** "));
+        System.out.println(String.join("", " ** ** ", " ** ** ", " ** ** ", " ** "));
+        System.out.println(String.join("", " ** ** ", " ** ** ", " ***** ", "  **** "));
+        System.out.println(String.join("", " ** ** ", " ** ** ", " ** ", "     **"));
+        System.out.println(String.join("", " ** ** ", " ** ** ", " ** ", "     **"));
+        System.out.println(String.join("", "  *** ", "  *** ", " ** ", "  **** "));
     }
 }
