@@ -1,24 +1,25 @@
 /**
- * OOPSBannerApp UC4: String Array and Loop
+ * OOPSBannerApp UC5: Inline Array Initialization
+ * Combining array declaration and population in one step.
  * @author Developer
- * @version 4.0
+ * @version 5.0
  */
 public class OOPSBannerApp {
     public static void main(String[] args) {
-        // We use an array to store the 7 rows of the banner.
-        // I added extra "      " (6 spaces) between letters to prevent congestion.
-        String[] banner = {
+        // UC5: Define and populate the array at the same time (Inline)
+        // Spacing is increased ("      ") to make the banner look big and clear
+        String[] lines = {
             String.join("      ", "  **** ", "  **** ", " ***** ", "  **** "),
-            String.join("      ", " ** ** ", " ** ** ", " ** ** ", " ** "),
-            String.join("      ", " ** ** ", " ** ** ", " ** ** ", " ** "),
-            String.join("      ", " ** ** ", " ** ** ", " ***** ", "  **** "),
-            String.join("      ", " ** ** ", " ** ** ", " ** ", "     ** "),
-            String.join("      ", " ** ** ", " ** ** ", " ** ", "     ** "),
+            String.join("      ", " ** **", " ** **", " ** **", " ** "),
+            String.join("      ", " ** **", " ** **", " ** **", " ** "),
+            String.join("      ", " ** **", " ** **", " ***** ", "  **** "),
+            String.join("      ", " ** **", " ** **", " ** ", "     **"),
+            String.join("      ", " ** **", " ** **", " ** ", "     **"),
             String.join("      ", "  **** ", "  **** ", " ** ", "  **** ")
         };
 
-        // This loop prints the array row by row
-        for (String line : banner) {
+        // Loop to print each line
+        for (String line : lines) {
             System.out.println(line);
         }
     }
