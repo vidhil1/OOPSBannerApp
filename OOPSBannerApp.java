@@ -8,17 +8,17 @@ public class OOPSBannerApp {
 
     // Method to generate the pattern for the letter 'O'
     public static String[] getOPattern() {
-        return new String[]{ "  **** ", " ** **", " ** **", " ** **", " ** **", " ** **", "  **** " };
+        return new String[]{ "  **** ", " **  **", " **  **", " **  **", " **  **", " **  **", "  **** " };
     }
 
     // Method to generate the pattern for the letter 'P'
     public static String[] getPPattern() {
-        return new String[]{ " ***** ", " ** **", " ** **", " ***** ", " ** ", " ** ", " ** " };
+        return new String[]{ " ***** ", " **  **", " **  **", " ***** ", " ** ", " ** "," ** " };
     }
 
     // Method to generate the pattern for the letter 'S'
     public static String[] getSPattern() {
-        return new String[]{ "  **** ", " ** ", " ** ", "  **** ", "     **", "     **", "  **** " };
+        return new String[]{ "  **** ", " ** ", " ** ", "  **** ", " **", " **", "  **** " };
     }
 
     public static void main(String[] args) {
