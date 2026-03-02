@@ -1,26 +1,36 @@
 /**
- * OOPSBannerApp UC5: Inline Array Initialization
- * Combining array declaration and population in one step.
+ * OOPSBannerApp UC6: Refactoring into Static Functions
+ * Using helper methods to generate patterns for O, P, and S.
  * @author Developer
- * @version 5.0
+ * @version 6.0
  */
 public class OOPSBannerApp {
-    public static void main(String[] args) {
-        // UC5: Define and populate the array at the same time (Inline)
-        // Spacing is increased ("      ") to make the banner look big and clear
-        String[] lines = {
-            String.join("      ", "  **** ", "  **** ", " ***** ", "  **** "),
-            String.join("      ", " ** **", " ** **", " ** **", " ** "),
-            String.join("      ", " ** **", " ** **", " ** **", " ** "),
-            String.join("      ", " ** **", " ** **", " ***** ", "  **** "),
-            String.join("      ", " ** **", " ** **", " ** ", "     **"),
-            String.join("      ", " ** **", " ** **", " ** ", "     **"),
-            String.join("      ", "  **** ", "  **** ", " ** ", "  **** ")
-        };
 
-        // Loop to print each line
-        for (String line : lines) {
-            System.out.println(line);
+    // Method to generate the pattern for the letter 'O'
+    public static String[] getOPattern() {
+        return new String[]{ "  **** ", " ** **", " ** **", " ** **", " ** **", " ** **", "  **** " };
+    }
+
+    // Method to generate the pattern for the letter 'P'
+    public static String[] getPPattern() {
+        return new String[]{ " ***** ", " ** **", " ** **", " ***** ", " ** ", " ** ", " ** " };
+    }
+
+    // Method to generate the pattern for the letter 'S'
+    public static String[] getSPattern() {
+        return new String[]{ "  **** ", " ** ", " ** ", "  **** ", "     **", "     **", "  **** " };
+    }
+
+    public static void main(String[] args) {
+        // Fetch the patterns from our functions
+        String[] oPattern = getOPattern();
+        String[] pPattern = getPPattern();
+        String[] sPattern = getSPattern();
+        String gap = "      "; // 6 spaces for a spacious look
+
+        // Assemble and print the banner row by row
+        for (int i = 0; i < 7; i++) {
+            System.out.println(String.join(gap, oPattern[i], oPattern[i], pPattern[i], sPattern[i]));
         }
     }
 }
