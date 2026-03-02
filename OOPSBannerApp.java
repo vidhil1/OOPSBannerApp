@@ -10,11 +10,11 @@ public class OOPSBannerApp {
         // Spacing is increased ("      ") to make the banner look big and clear
         String[] lines = {
             String.join("      ", "  **** ", "  **** ", " ***** ", "  **** "),
-            String.join("      ", " ** **", " ** **", " ** **", " ** "),
-            String.join("      ", " ** **", " ** **", " ** **", " ** "),
-            String.join("      ", " ** **", " ** **", " ***** ", "  **** "),
-            String.join("      ", " ** **", " ** **", " ** ", "     **"),
-            String.join("      ", " ** **", " ** **", " ** ", "     **"),
+            String.join("      ", " **  **", " **  **", " **  **", " ** "),
+            String.join("      ", " **  **", " **  **", " **  **", " ** "),
+            String.join("      ", " **  **", " **  **", " ***** ", "  **** "),
+            String.join("      ", " **  **", " **  **", " ** ", "     **"),
+            String.join("      ", " **  **", " **  **", " ** ", "     **"),
             String.join("      ", "  **** ", "  **** ", " ** ", "  **** ")
         };
 
